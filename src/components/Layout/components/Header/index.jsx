@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 // import { Wrapper } from 'tiktok-ui/src/components/Popper';
 import { Wrapper as PopperWrapper} from '../../../../components/Popper';
 import AccountItem from '../../../AccountItem';
+import Button from '../../../Button';
 
 
 const cx = classNames.bind(styles)
@@ -65,7 +66,10 @@ function Header() {
                 </div>
            </Tippy>
            <div className={cx('actions')}>
-
+                <Button text>Upload</Button>
+                <Button primary>
+                    Log in
+                </Button>
            </div>
         </div>
     </header>
